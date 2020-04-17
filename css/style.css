@@ -435,13 +435,16 @@ footer a:hover {
 
 /*Inicio seccion BLOG*/
 
-main section .entrada .imagen{
+
+main section .entrada_blog .imagen{
     width: 300px;
     position: relative;
+    display: flex;
+
     
 }
 
-main section .entrada .fecha {
+main section .entrada_blog .fecha {
    background-color: rgba(250, 87, 58, 0.8);
    text-align: center;
    padding: 0.625em;
@@ -450,31 +453,38 @@ main section .entrada .fecha {
    position: relative;
    top: -12.480em;
 
-}
 
-main section .entrada .fecha p{
+}  
+
+main section .entrada_blog .fecha p{
     font-weight: 700;
     color: white;
+    
 }
 
 main .column{
     max-width: var(--ancho-maximo);
     margin: 0 auto;
     
+    
 }
 
 .flex {
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 main .column article{
     padding: 0 0.825em;
-    
+
     
 }
 
+main section div .entrada_blog {
+  width: 300px;
+
+}
+    
 
 main .column article h4{
     margin-bottom: 1em;
@@ -493,5 +503,44 @@ hr {
     }
     
    
+}
+
+
+
+/*INICIO SECCION MENU*/
+
+main #menu{
+    background-color: var(--color-secundario);
+}
+
+main #menu h2,h3,p{
+    color: white;
+}
+
+
+
+section .container .nav_list ul {
+    width: 100%;
+}
+
+
+section .container .nav_list ul li a{
+    display: block;
+    padding: 1.250em;
+    margin-left: 6em;
+    text-align: left;
+    text-decoration: none;
+    color: white
+
+}
+
+section .container .nav_list ul li a:hover{
+    color: var(--color-principal);
+}
+
+
+section .container .nav_list ul li a.activo{
+    background-color: var(--color-principal);
+    border-radius: 10px;
 }
 
