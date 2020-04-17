@@ -435,8 +435,18 @@ footer a:hover {
 
 /*Inicio seccion BLOG*/
 
+/*ME VAS A TIRAR DE LAS OREJAS POR NO DECIR DE OTRO SITIO PERO NO ME SALEN LAS COLUMNAS*/
+
+.contenedor_blog{
+    max-width: 53%;
+    margin: 0 auto;
+
+}
+
+
 
 main section .entrada_blog .imagen{
+    margin: 0 auto;
     width: 300px;
     position: relative;
     display: flex;
@@ -501,6 +511,16 @@ hr {
     .flex{
         flex-wrap: nowrap;
     }
+
+    .contenedor_blog{
+        max-width: 100%;
+        margin: 0;
+    
+    }
+
+    main .contenedor_blog .entrada_blog{
+        padding: 0 ;
+     }
     
    
 }
@@ -509,12 +529,35 @@ hr {
 
 /*INICIO SECCION MENU*/
 
-main #menu{
+main #menu {
     background-color: var(--color-secundario);
+
 }
 
-main #menu h2,h3,p{
+.contenedor_menu {
+    max-width: 80%;
+}
+
+.blanco {
     color: white;
+}
+
+main section h3 {
+    font-weight: 700;
+    font-size: 1.750em;
+}
+
+.hacer_flex{
+    display: flex;
+}
+
+main section p.precio{
+    color: var(--color-principal);
+    font-weight: 700;
+    font-size: 1.750em;
+    padding: 1em;
+    
+    
 }
 
 
@@ -527,7 +570,6 @@ section .container .nav_list ul {
 section .container .nav_list ul li a{
     display: block;
     padding: 1.250em;
-    margin-left: 6em;
     text-align: left;
     text-decoration: none;
     color: white
@@ -538,9 +580,29 @@ section .container .nav_list ul li a:hover{
     color: var(--color-principal);
 }
 
+section .container .nav_list ul li a.activo:hover{
+    color: var(--color-secundario);
+}
+
 
 section .container .nav_list ul li a.activo{
     background-color: var(--color-principal);
     border-radius: 10px;
+}
+
+.todayoffers {
+    border-color: var(--color-principal);
+    width: 5.500em;
+    margin: 1em 0;
+}
+
+.encabezado_menu {
+    margin-left: 5em;
+}
+
+.container .producto {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 1em;
 }
 
