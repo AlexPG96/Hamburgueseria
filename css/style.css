@@ -257,7 +257,7 @@ header nav ul li .activo{
     background-color: transparent;
     color: var(--color-principal);
 }
-/*para mover la flecha de ida y de vuelta*/
+/*para mover la flecha d0.5e ida y de vuelta*/
 .button:hover i{
     transform: translateX(5px);
 }
@@ -438,7 +438,7 @@ footer a:hover {
 /*ME VAS A TIRAR DE LAS OREJAS POR NO DECIR DE OTRO SITIO PERO NO ME SALEN LAS COLUMNAS*/
 
 .contenedor_blog{
-    max-width: 53%;
+    max-width: 40%;
     margin: 0 auto;
 
 }
@@ -547,8 +547,34 @@ main section h3 {
     font-size: 1.750em;
 }
 
-.hacer_flex{
+.alinear{
     display: flex;
+}
+
+.order_now{
+    display: inline-block;
+    padding: 1em;
+    color: var(--color-principal);
+    text-decoration: none;
+    font-weight: 700;
+    margin: 1em 0;
+    text-align: center;
+
+}
+
+.order_now i{
+    transform: translateY(0.2em);
+    border: 0;
+}
+
+.order_now:hover{
+    background-color: transparent;
+    color: var(--color-principal);
+}
+/*para mover la flecha de ida y de vuelta*/
+.order_now:hover{
+    transform: translateX(0.2em);
+   
 }
 
 main section p.precio{
@@ -605,4 +631,56 @@ section .container .nav_list ul li a.activo{
     margin: 0 auto;
     padding: 1em;
 }
+
+@media(min-width: 62.750em){
+    .encabezado_menu {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        height: 30%;
+        position: absolute;
+    }
+
+    .today_hot_offers{
+        margin: 5em 0;
+        
+    }
+   
+
+    .productos{
+        display: inline-block;
+        position: relative;
+        left: 25%;
+        height: 20%;
+        width: 50%;
+        padding-left: 10em;
+
+    }
+
+    .producto{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        
+    }
+
+    .alinear {
+        width: 900px;
+        justify-content: center;
+        position: absolute;
+        left: 25em;
+        margin-top: -2em;
+        
+    }
+
+    .alinear_descripcion{
+        width: 900px;
+        justify-content: center;
+        position: absolute;
+        left: 31.750em;
+        margin-top: 3em;
+    }
+}
+
 
